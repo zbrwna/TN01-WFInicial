@@ -36,7 +36,7 @@
             // lblDiaSemana
             // 
             lblDiaSemana.AutoSize = true;
-            lblDiaSemana.Location = new Point(112, 68);
+            lblDiaSemana.Location = new Point(121, 105);
             lblDiaSemana.Name = "lblDiaSemana";
             lblDiaSemana.Size = new Size(84, 15);
             lblDiaSemana.TabIndex = 0;
@@ -51,9 +51,9 @@
             // 
             // btnEscolher
             // 
-            btnEscolher.Location = new Point(130, 175);
+            btnEscolher.Location = new Point(105, 161);
             btnEscolher.Name = "btnEscolher";
-            btnEscolher.Size = new Size(75, 23);
+            btnEscolher.Size = new Size(100, 23);
             btnEscolher.TabIndex = 2;
             btnEscolher.Text = "Escolher";
             btnEscolher.UseVisualStyleBackColor = true;
