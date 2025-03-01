@@ -28,73 +28,86 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            label2 = new Label();
-            textBox3 = new TextBox();
-            label3 = new Label();
+            lblNome = new Label();
+            txtNome = new TextBox();
+            txtQuantHoras = new TextBox();
+            lblQuantHoras = new Label();
+            txtValorHora = new TextBox();
+            lblValorHora = new Label();
+            btnCalcular = new Button();
             SuspendLayout();
             // 
-            // label1
+            // lblNome
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(50, 92);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
+            lblNome.AutoSize = true;
+            lblNome.Location = new Point(98, 85);
+            lblNome.Name = "lblNome";
+            lblNome.Size = new Size(40, 15);
+            lblNome.TabIndex = 0;
+            lblNome.Text = "Nome";
             // 
-            // textBox1
+            // txtNome
             // 
-            textBox1.Location = new Point(94, 84);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 1;
+            txtNome.Location = new Point(184, 82);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(100, 23);
+            txtNome.TabIndex = 1;
             // 
-            // textBox2
+            // txtQuantHoras
             // 
-            textBox2.Location = new Point(94, 116);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 3;
+            txtQuantHoras.Location = new Point(184, 140);
+            txtQuantHoras.Name = "txtQuantHoras";
+            txtQuantHoras.Size = new Size(100, 23);
+            txtQuantHoras.TabIndex = 3;
             // 
-            // label2
+            // lblQuantHoras
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(50, 119);
-            label2.Name = "label2";
-            label2.Size = new Size(38, 15);
-            label2.TabIndex = 2;
-            label2.Text = "label2";
+            lblQuantHoras.AutoSize = true;
+            lblQuantHoras.Location = new Point(59, 144);
+            lblQuantHoras.Name = "lblQuantHoras";
+            lblQuantHoras.Size = new Size(119, 15);
+            lblQuantHoras.TabIndex = 2;
+            lblQuantHoras.Text = "Quantidade de Horas";
             // 
-            // textBox3
+            // txtValorHora
             // 
-            textBox3.Location = new Point(94, 151);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 5;
+            txtValorHora.Location = new Point(184, 111);
+            txtValorHora.Name = "txtValorHora";
+            txtValorHora.Size = new Size(100, 23);
+            txtValorHora.TabIndex = 5;
             // 
-            // label3
+            // lblValorHora
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(50, 154);
-            label3.Name = "label3";
-            label3.Size = new Size(38, 15);
-            label3.TabIndex = 4;
-            label3.Text = "label3";
+            lblValorHora.AutoSize = true;
+            lblValorHora.Location = new Point(79, 114);
+            lblValorHora.Name = "lblValorHora";
+            lblValorHora.Size = new Size(76, 15);
+            lblValorHora.TabIndex = 4;
+            lblValorHora.Text = "Valor da hora";
+            lblValorHora.Click += lblRenda_Click;
+            // 
+            // btnCalcular
+            // 
+            btnCalcular.Location = new Point(184, 181);
+            btnCalcular.Name = "btnCalcular";
+            btnCalcular.Size = new Size(100, 23);
+            btnCalcular.TabIndex = 6;
+            btnCalcular.Text = "Calcular";
+            btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += btnRendaTotal_Click;
             // 
             // FormEx6
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox3);
-            Controls.Add(label3);
-            Controls.Add(textBox2);
-            Controls.Add(label2);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
+            Controls.Add(btnCalcular);
+            Controls.Add(txtValorHora);
+            Controls.Add(lblValorHora);
+            Controls.Add(txtQuantHoras);
+            Controls.Add(lblQuantHoras);
+            Controls.Add(txtNome);
+            Controls.Add(lblNome);
             Name = "FormEx6";
             Text = "FormEx6";
             ResumeLayout(false);
@@ -103,11 +116,12 @@
 
         #endregion
 
-        private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Label label2;
-        private TextBox textBox3;
-        private Label label3;
+        private Label lblNome;
+        private TextBox txtNome;
+        private TextBox txtQuantHoras;
+        private Label lblQuantHoras;
+        private TextBox txtValorHora;
+        private Label lblValorHora;
+        private Button btnCalcular;
     }
 }
