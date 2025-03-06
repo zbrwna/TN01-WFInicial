@@ -28,42 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnCadastro = new Button();
-            lblProduto = new Label();
-            txtProduto = new TextBox();
+            btnContador = new Button();
+            lblNomeProduto = new Label();
+            txtNomeProduto = new TextBox();
             txtValorProduto = new TextBox();
             lblValorProduto = new Label();
             SuspendLayout();
             // 
-            // btnCadastro
+            // btnContador
             // 
-            btnCadastro.Location = new Point(91, 165);
-            btnCadastro.Name = "btnCadastro";
-            btnCadastro.Size = new Size(75, 23);
-            btnCadastro.TabIndex = 0;
-            btnCadastro.Text = "Cadastro";
-            btnCadastro.UseVisualStyleBackColor = true;
-            btnCadastro.Click += btnCadastro_Click;
+            btnContador.Location = new Point(215, 164);
+            btnContador.Name = "btnContador";
+            btnContador.Size = new Size(75, 23);
+            btnContador.TabIndex = 0;
+            btnContador.Text = "Contador";
+            btnContador.UseVisualStyleBackColor = true;
+            btnContador.Click += btnCadastrar_Click;
             // 
-            // lblProduto
+            // lblNomeProduto
             // 
-            lblProduto.AutoSize = true;
-            lblProduto.Location = new Point(47, 94);
-            lblProduto.Name = "lblProduto";
-            lblProduto.Size = new Size(50, 15);
-            lblProduto.TabIndex = 1;
-            lblProduto.Text = "Produto";
+            lblNomeProduto.AutoSize = true;
+            lblNomeProduto.Location = new Point(140, 75);
+            lblNomeProduto.Name = "lblNomeProduto";
+            lblNomeProduto.Size = new Size(50, 15);
+            lblNomeProduto.TabIndex = 1;
+            lblNomeProduto.Text = "Produto";
             // 
-            // txtProduto
+            // txtNomeProduto
             // 
-            txtProduto.Location = new Point(104, 91);
-            txtProduto.Name = "txtProduto";
-            txtProduto.Size = new Size(100, 23);
-            txtProduto.TabIndex = 2;
+            txtNomeProduto.Location = new Point(201, 72);
+            txtNomeProduto.Name = "txtNomeProduto";
+            txtNomeProduto.Size = new Size(100, 23);
+            txtNomeProduto.TabIndex = 2;
             // 
             // txtValorProduto
             // 
-            txtValorProduto.Location = new Point(104, 120);
+            txtValorProduto.Location = new Point(201, 113);
             txtValorProduto.Name = "txtValorProduto";
             txtValorProduto.Size = new Size(100, 23);
             txtValorProduto.TabIndex = 4;
@@ -71,7 +71,7 @@
             // lblValorProduto
             // 
             lblValorProduto.AutoSize = true;
-            lblValorProduto.Location = new Point(64, 123);
+            lblValorProduto.Location = new Point(140, 116);
             lblValorProduto.Name = "lblValorProduto";
             lblValorProduto.Size = new Size(33, 15);
             lblValorProduto.TabIndex = 3;
@@ -84,9 +84,9 @@
             ClientSize = new Size(800, 450);
             Controls.Add(txtValorProduto);
             Controls.Add(lblValorProduto);
-            Controls.Add(txtProduto);
-            Controls.Add(lblProduto);
-            Controls.Add(btnCadastro);
+            Controls.Add(txtNomeProduto);
+            Controls.Add(lblNomeProduto);
+            Controls.Add(btnContador);
             Name = "FormEx7";
             Text = "FormEx7";
             ResumeLayout(false);
@@ -95,9 +95,9 @@
 
         #endregion
 
-        private Button btnCadastro;
-        private Label lblProduto;
-        private TextBox txtProduto;
+        private Button btnContador;
+        private Label lblNomeProduto;
+        private TextBox txtNomeProduto;
         private TextBox txtValorProduto;
         private Label lblValorProduto;
     }
