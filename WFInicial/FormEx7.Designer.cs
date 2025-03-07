@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnContador = new Button();
+            btnCadastrar = new Button();
             lblNomeProduto = new Label();
             txtNomeProduto = new TextBox();
             txtValorProduto = new TextBox();
             lblValorProduto = new Label();
             SuspendLayout();
             // 
-            // btnContador
+            // btnCadastrar
             // 
-            btnContador.Location = new Point(215, 164);
-            btnContador.Name = "btnContador";
-            btnContador.Size = new Size(75, 23);
-            btnContador.TabIndex = 0;
-            btnContador.Text = "Contador";
-            btnContador.UseVisualStyleBackColor = true;
-            btnContador.Click += btnCadastrar_Click;
+            btnCadastrar.Location = new Point(215, 164);
+            btnCadastrar.Name = "btnCadastrar";
+            btnCadastrar.Size = new Size(75, 23);
+            btnCadastrar.TabIndex = 0;
+            btnCadastrar.Text = "Cadastrar";
+            btnCadastrar.UseVisualStyleBackColor = true;
+            btnCadastrar.Click += btnCadastrar_Click;
             // 
             // lblNomeProduto
             // 
@@ -86,7 +86,7 @@
             Controls.Add(lblValorProduto);
             Controls.Add(txtNomeProduto);
             Controls.Add(lblNomeProduto);
-            Controls.Add(btnContador);
+            Controls.Add(btnCadastrar);
             Name = "FormEx7";
             Text = "FormEx7";
             ResumeLayout(false);
@@ -95,7 +95,7 @@
 
         #endregion
 
-        private Button btnContador;
+        private Button btnCadastrar;
         private Label lblNomeProduto;
         private TextBox txtNomeProduto;
         private TextBox txtValorProduto;
