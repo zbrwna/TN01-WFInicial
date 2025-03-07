@@ -85,6 +85,11 @@ namespace WFInicial
                 MessageBox.Show(mensagem, "Info",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            else
+            {
+                MessageBox.Show("Você deve escolher uma operação",
+                "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
 
 
