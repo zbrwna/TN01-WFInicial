@@ -36,6 +36,10 @@
             btnEx6 = new Button();
             btnEx7 = new Button();
             btnEx8 = new Button();
+            btnEx9 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
             SuspendLayout();
             // 
             // btnEx1
@@ -118,11 +122,52 @@
             btnEx8.UseVisualStyleBackColor = true;
             btnEx8.Click += btnEx8_Click;
             // 
+            // btnEx9
+            // 
+            btnEx9.Location = new Point(86, 176);
+            btnEx9.Name = "btnEx9";
+            btnEx9.Size = new Size(75, 23);
+            btnEx9.TabIndex = 8;
+            btnEx9.Text = "Exercicio 9";
+            btnEx9.UseVisualStyleBackColor = true;
+            btnEx9.Click += btnEx9_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(178, 176);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 9;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(269, 176);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 10;
+            button3.Text = "button3";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(363, 176);
+            button4.Name = "button4";
+            button4.Size = new Size(75, 23);
+            button4.TabIndex = 11;
+            button4.Text = "button4";
+            button4.UseVisualStyleBackColor = true;
+            // 
             // FormMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(527, 307);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(btnEx9);
             Controls.Add(btnEx8);
             Controls.Add(btnEx7);
             Controls.Add(btnEx6);
@@ -146,5 +191,9 @@
         private Button btnEx6;
         private Button btnEx7;
         private Button btnEx8;
+        private Button btnEx9;
+        private Button button2;
+        private Button button3;
+        private Button button4;
     }
 }
