@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WFInicial
 {
@@ -27,24 +28,28 @@ namespace WFInicial
             if (contagem < 20)
             {
                 int numero = int.Parse(txtNumero.Text);
-                numeros[0] = numero;
+                numeros[contagem] = numero;
             }
 
-            if (numero % 2 == 0)
-            {
-                Array.Resize(ref pares, pares.Length + 1);
-                pares[pares.Length - 1] = numero;
-            }
-            else
-            {
-                Array.Resize(ref impares, impares.Length + 1);
-                impares[impares.Length - 1] = numero;
-            }
+            contagem++;
 
-                contagem++;
-
-            if(contagem == 20)
+            if (contagem == 20)
             {
+
+                for (int i = 0; i < numeros.Length; i++)
+                {
+                    if (numeros[i] % 2 == 0)
+                    {
+                        Array.Resize(ref pares, pares.Length + 1);
+                        pares[pares.Length - 1] = numeros[i];
+                    }
+                    else
+                    {
+                        Array.Resize(ref impares, impares.Length + 1);
+                        impares[impares.Length - 1] = numeros[i];
+                    }
+                }
+
                 for (int i = 0; i < numeros.Length; i++)
                 {
                     lblNumeros.Text += numeros[i] + ",";
@@ -58,8 +63,9 @@ namespace WFInicial
                     lblImpar.Text += impares[i] + ",";
                 }
 
-            }
 
+
+            }
         }
     }
 }
